@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+
+
+
+
+
+}
+
+.container {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35.5px;
+}
+
+.header__logo {
+
+}
+
+.header__navegacao{ 
+  display: flex;
+  align-items: center;
+  gap: 35.5px;
+}
+
+.header__navegacao-login {
+  border: 1px solid blue;
+  padding: 12px 10vw;
+}
