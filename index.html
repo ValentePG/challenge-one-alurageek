@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AluraGeek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style/style.css">
   <link rel="stylesheet" href="/style/responsivo.css">
 </head>
@@ -11,24 +14,27 @@
   <header class="header container">
     <div class="header__logo">
       <img src="/assets/Logo.svg" alt="Logo AluraGeek">
+      <form class="header__formulario">
+        <label for="pesquisa"><input type="text" name="pesquisa" id="pesquisa" placeholder="O que deseja encontrar?"></label>
+      </form>
     </div>
     <nav class="header__navegacao">
-      <a class="header__navegacao-login" href="@">Login</a>
+      <a class="header__navegacao-login" href="/login.html">Login</a> 
       <div class="header__navegacao-lupa">
         <img src="/assets/Icone.svg" alt="Lupa de pesquisa">
       </div>
     </nav>
   </header>
 
-  <!-- <section class="banner">
-    <div class="banner__texto">
+  <section class="banner">
+    <div class="banner__texto container">
       <h1>Dezembro Promocional</h1>
       <p>Produtos selecionados com 33% de desconto</p>
-      <a class="banner__botao" href="@"></a>
+      <a class="banner__botao" href="@">Ver Consoles</a>
     </div>
   </section>
 
-  <main class="vitrine">
+  <!-- <main class="vitrine">
     <div class="vitrine__apresentacao">
       <h2>Star Wars</h2>
       <p>Ver tudo -></p>

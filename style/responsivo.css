@@ -1,2 +1,129 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 360px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .header {
+    gap: 30px;
+  }
+  
+  .header__navegacao{ 
+    gap: 30px;
+  }
+  
+  .header__navegacao-login {
+    padding: 12px 0px;
+    width: 20vw; 
+  }
+  
+  .header__formulario {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    padding: 32px;
+  }
+
+  .header__navegacao-lupa {
+    display: none;
+  }
+
+  .header__navegacao-login {
+    width: 180px;
+  }
+
+  .header__logo{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .header__logo > img {
+    height: 40px;
+  }
+
+  .header__formulario {
+    background-color: var(--formulario);
+    padding: 12px 16px;
+    height: 40px;
+    border-radius: 20px; 
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  
+  label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #pesquisa {
+    background-color: var(--formulario);
+    border: none;
+    outline: none;
+    color: var(--cinza);
+    font-weight: 400;
+    font-size: 0.875rem;
+    width: 70%;
+  }
+  
+  label::after {
+    content: url(/assets/Icone-cinza.svg);
+    color: var(--cinza);
+    margin-top: 2px;
+  }
+  
+  ::placeholder {
+    color: var(--cinza);
+  }
+
+  .banner {
+    height: 350px;
+  }
+
+  .banner__texto h1 {
+    font-size: 3.25rem;
+    font-weight: 700; 
+  }
+
+  .banner__texto p {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 32px;
+  }
+
+  .header__formulario {
+    width: 400px;
+  }
+
+  .header__logo > img {
+    height: 50px;
+  }
+
+  .banner__botao {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 32px 0px;
+    max-width: 1136px;
+    margin: 0 auto;
+    }
+    
+}
