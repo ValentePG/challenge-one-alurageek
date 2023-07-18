@@ -7,9 +7,9 @@
 }
 
 :root {
-
   font-family: 'Raleway', sans-serif;
   --azul: #2A7AE4;
+  --formulario: #eaf2fd;
   --preto: #464646;
   --cinza: #A2A2A2;
   --formulario: #F5F5F5;
@@ -100,4 +100,99 @@
   color: var(--azul);
   background-color: rgb(255, 255, 255);
   transition: .5s;
+}
+
+
+/* Main */ 
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.principal__produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.produtos__secao {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produtos__secao-titulo h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+.produtos__secao-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.produtos__secao-link::after {
+  content: url(/assets/seta.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.produtos__secao-link a {
+  text-decoration: none;
+  color: var(--azul);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.produto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.produto__vitrine {
+  width: 156px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.produto__vitrine-descricao p:nth-child(1) {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--preto);
+  margin-bottom: 8px;
+}
+
+.produto__vitrine-descricao p:nth-child(2) {
+  font-size: 1rem;
+}
+
+.descricao__link {
+  text-decoration: none;
+  color: var(--azul);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.extra {
+  display: none;
+}
+
+/* formulario */
+
+
+.formulario {
+  background-color: #eaf2fd;
+  height: 300px;
+}
+
+
+footer {
+  text-align: center;
 }

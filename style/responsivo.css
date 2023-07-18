@@ -21,7 +21,7 @@
   .header__formulario {
     display: none;
   }
-  
+
 }
 
 @media screen and (min-width: 768px) {
@@ -99,6 +99,23 @@
     font-size: 1.25rem;
     font-weight: 700;
   }
+  
+  .produto__vitrine {
+    width: 164px;
+  }
+
+  .produtos__secao-link a {
+    font-size: 0.875rem;
+  }
+
+  .produtos__secao-link::after {
+    width: 24px;
+    height: 24px;
+  }
+
+  .descricao__link {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -117,6 +134,8 @@
   .banner__botao {
     font-size: 1rem;
   }
+
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -125,4 +144,20 @@
     max-width: 1136px;
     margin: 0 auto;
   }  
+
+  .principal {
+    padding: 64px 0px;
+  }
+
+  .produtos__secao-titulo h2 {
+    font-size: 2rem ;
+  }
+   
+  .produto__vitrine {
+    width: 176px;
+  }
+  
+  .extra {
+    display: flex;
+  }
 }
