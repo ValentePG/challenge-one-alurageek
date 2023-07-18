@@ -77,7 +77,7 @@
   }
   
   label::after {
-    content: url(/assets/Icone-cinza.svg);
+    content: url(../assets/Icone-cinza.svg);
     color: var(--cinza);
     margin-top: 2px;
   }
