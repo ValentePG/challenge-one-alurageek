@@ -101,7 +101,7 @@
   }
   
   .produto__vitrine {
-    width: 164px;
+    width: calc((100% / 4) - 16px);
   }
 
   .produtos__secao-link a {
@@ -135,6 +135,13 @@
     font-size: 1rem;
   }
 
+  .extra {
+    display: flex;
+  }
+
+  .produto__vitrine {
+    width: calc((100% / 6) - 16px);
+  }
   
 }
 
@@ -153,11 +160,7 @@
     font-size: 2rem ;
   }
    
-  .produto__vitrine {
-    width: 176px;
-  }
   
-  .extra {
-    display: flex;
-  }
+  
+  
 }
