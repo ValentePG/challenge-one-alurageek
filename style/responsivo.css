@@ -22,6 +22,10 @@
     display: none;
   }
 
+  .formulario__submit {
+    width: 150px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -59,7 +63,7 @@
     justify-content: space-between
   }
   
-  label {
+  .label__pesquisa {
     width: 100%;
     display: flex;
     align-items: center;
@@ -70,20 +74,20 @@
     background-color: var(--formulario);
     border: none;
     outline: none;
-    color: var(--cinza);
-    font-weight: 400;
-    font-size: 0.875rem;
+    color: var(--preto);
+    font-family: 'Raleway', sans-serif;
     width: 70%;
   }
   
-  label::after {
+  .label__pesquisa::after {
     content: url(../assets/Icone-cinza.svg);
     color: var(--cinza);
     margin-top: 2px;
   }
   
-  ::placeholder {
-    color: var(--cinza);
+  #pesquisa::placeholder {
+    font-weight: 400;
+    font-size: 0.875rem;
   }
 
   .banner {
@@ -116,6 +120,22 @@
   .descricao__link {
     font-size: 1rem;
   }
+
+  .rodape {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .rodape__formulario {
+    width: 60%;
+  }
+
+  .rodape__informacao-lista {
+    text-align: left;
+    line-height: 2.5rem;
+  }
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -141,6 +161,26 @@
 
   .produto__vitrine {
     width: calc((100% / 6) - 16px);
+  }
+
+  
+  .rodape__informacao {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 40%;
+  }
+
+  .rodape__informacao-logo {
+    width: 40%;
+  }
+
+  .rodape__informacao-logo img {
+    max-width: 100%;
+  }
+
+  .rodape__informacao-lista {
+    width: 50%;
   }
   
 }

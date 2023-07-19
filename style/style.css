@@ -184,15 +184,110 @@
   display: none;
 }
 
-/* formulario */
+/* rodape */
 
-
-.formulario {
+.background {
   background-color: #eaf2fd;
-  height: 300px;
 }
 
+.rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.rodape__informacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rodape__informacao-logo img {
+  width: 176px;
+}
+
+.rodape__informacao-lista {
+  list-style: none;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rodape__informacao-lista li > a{
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fieldset legend {
+  margin-bottom: 8px;
+}
+
+.formulario__nome {
+  padding: 8px 12px;
+  background-color: white;
+}
+
+.formulario__label-nome {
+  color: var(--cinza);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.mensagem::placeholder, #nome::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+::placeholder {
+  font-family: 'Raleway', sans-serif;
+  color: var(--cinza);
+}
+
+#nome {
+  margin-top: 8px;
+}
+
+.mensagem {
+  resize: none;
+  padding: 12px;
+  height: 64px;
+}
+
+#nome, .mensagem{
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--preto);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+}
+
+.formulario__submit {
+  background-color: var(--azul);
+  color: white;
+  padding: 16px 12px;
+  border: 1px solid transparent;
+}
+
+.formulario__submit:hover {
+  background-color: white;
+  color: var(--azul);
+  transition: .5s;
+  cursor: pointer;
+  border: 1px solid var(--preto);
+}
 
 footer {
   text-align: center;
+  padding: 32px 63px;
+  font-weight: 400;
 }

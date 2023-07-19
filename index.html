@@ -15,7 +15,7 @@
     <div class="header__logo">
       <img src="assets/Logo.svg" alt="Logo AluraGeek">
       <form class="header__formulario">
-        <label for="pesquisa"><input type="text" name="pesquisa" id="pesquisa" placeholder="O que deseja encontrar?"></label>
+        <label for="pesquisa" class="label__pesquisa"><input type="text" name="pesquisa" id="pesquisa" placeholder="O que deseja encontrar?"></label>
       </form>
     </div>
     <nav class="header__navegacao">
@@ -277,8 +277,35 @@
     </section>
   </main>
 
-  <section class="formulario">
-
+  <section class="background">
+    <section class="rodape container">
+      <section class="rodape__informacao">
+        <div class="rodape__informacao-logo">
+          <img src="./assets/Logo.svg" alt="Logo AluraGeek">
+        </div>
+        <ul class="rodape__informacao-lista">
+          <li><a href="@">Quem somos nós</a></li>
+          <li><a href="@">Política de privacidade</a></li>
+          <li><a href="@">Programa de fidelidade</a></li>
+          <li><a href="@">Nossas Lojas</a></li>
+          <li><a href="@">Quero ser franqueado</a></li>
+          <li><a href="@">Anuncie aqui</a></li>
+        </ul>
+      </section>
+    
+      <form class="rodape__formulario">
+        <fieldset class="fieldset">
+          <legend><strong>Fale Conosco</strong></legend>
+          <div class="formulario__nome">
+            <label for="nome" class="formulario__label-nome">Nome<input type="text" name="nome" id="nome" placeholder="Escreva seu nome"></label>
+          </div>
+          <div class="formulario__mensagem">
+            <textarea name="mensagem" class="mensagem" id="mensagem" cols="30" rows="5" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <input type="submit" value="Enviar Mensagem" class="formulario__submit">
+        </fieldset>
+      </form>
+    </section>
   </section>
 
   <footer>
