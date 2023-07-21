@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style2.css">
+  <link rel="stylesheet" href="style/responsivo2.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="header__logo">
+      <img src="assets/Logo.svg" alt="Logo AluraGeek">
+      <form class="header__formulario">
+        <label for="pesquisa" class="label__pesquisa"><input type="text" name="pesquisa" id="pesquisa" placeholder="O que deseja encontrar?"></label>
+      </form>
+    </div>
+    <nav class="header__navegacao">
+      <div class="header__navegacao-lupa">
+        <img src="assets/Icone.svg" alt="Lupa de pesquisa">
+      </div>
+    </nav>
+  </header>
+
+  <main class="background__main">
+    <div class="formulario__seguro container">
+      <form class="formulario">
+        <fieldset class="formulario__login">
+          <legend><strong>Iniciar Sessão</strong></legend>
+          <div class="formulario__email">
+            <label for="email" class="formulario__label-email">Email<input type="email" name="email" id="email" placeholder="Escreva seu email"></label>
+          </div>
+          <div class="formulario__senha">
+            <label for="senha" class="formulario__label-senha">Senha<input type="password" name="senha" id="senha" placeholder="Escreva sua senha"></label>
+          </div>
+          <input type="submit" value="Entrar" id="formulario__login-submit" class="formulario__submit">
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
+  <section class="background">
+    <section class="rodape container">
+      <section class="rodape__informacao">
+        <div class="rodape__informacao-logo">
+          <img src="./assets/Logo.svg" alt="Logo AluraGeek">
+        </div>
+        <ul class="rodape__informacao-lista">
+          <li><a href="@">Quem somos nós</a></li>
+          <li><a href="@">Política de privacidade</a></li>
+          <li><a href="@">Programa de fidelidade</a></li>
+          <li><a href="@">Nossas Lojas</a></li>
+          <li><a href="@">Quero ser franqueado</a></li>
+          <li><a href="@">Anuncie aqui</a></li>
+        </ul>
+      </section>
+    
+      <form class="rodape__formulario">
+        <fieldset class="fieldset">
+          <legend><strong>Fale Conosco</strong></legend>
+          <div class="formulario__nome">
+            <label for="nome" class="formulario__label-nome">Nome<input type="text" name="nome" id="nome" placeholder="Escreva seu nome"></label>
+          </div>
+          <div class="formulario__mensagem">
+            <textarea name="mensagem" class="mensagem" id="mensagem" cols="30" rows="5" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <input type="submit" value="Enviar Mensagem" class="formulario__submit">
+        </fieldset>
+      </form>
+    </section>
+  </section>
+
+  <footer>
+    <p>&copy;Desenvolvido por Gabriel Valente 2023</p>
+  </footer>
+</body>
+</html>
