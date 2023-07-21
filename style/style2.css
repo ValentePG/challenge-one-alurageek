@@ -167,10 +167,10 @@
   color: var(--cinza);
 }
 
-#mensagem {
+.mensagem {
   resize: none;
   padding: 12px;
-  height: 64px;
+  height: 100%;
 }
 
 .formulario__submit {

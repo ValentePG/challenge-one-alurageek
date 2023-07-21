@@ -258,7 +258,7 @@
 .mensagem {
   resize: none;
   padding: 12px;
-  height: 64px;
+  height: 100%;
 }
 
 #nome, .mensagem{
