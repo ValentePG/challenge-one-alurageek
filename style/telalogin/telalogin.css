@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+:root {
+  font-family: 'Raleway', sans-serif;
+  --azul: #2A7AE4;
+  --formulario: #eaf2fd;
+  --preto: #464646;
+  --cinza: #A2A2A2;
+  --formulario: #F5F5F5;
+}
+
+.container {
+  padding: 16px 12px;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo > img {
+  height: 30px;
+}
+
+.header__navegacao{ 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__formulario {
+  display: none;
+}
+
+
+/* Main */ 
+
+.background__main {
+  background-color: var(--formulario); 
+}
+
+.formulario {
+  max-width: 430px;
+  margin: 76px auto;
+}
+
+.formulario__login legend {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.formulario__login {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#formulario__login-submit{
+  width: 100%;
+}
+
+.formulario__email, .formulario__senha {
+  padding: 8px 12px;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.314);
+}
+
+.formulario__email:focus-within , .formulario__senha:focus-within,
+ #mensagem:focus-within, .formulario__nome:focus-within{
+  border-bottom: 2px solid #2a7be4;
+} 
+
+
+.formulario__label-email, .formulario__label-senha {
+  color: var(--cinza);
+  font-size: 0.75rem;
+  font-weight: 400;
+
+}
+
+#senha, #email, #nome {
+  margin-top: 8px;
+}
+
+
+#senha, #email, #nome, #mensagem{
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--preto);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* rodape */
+
+.background {
+  background-color: #eaf2fd;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.rodape__informacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rodape__informacao-logo img {
+  width: 176px;
+}
+
+.rodape__informacao-lista {
+  list-style: none;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rodape__informacao-lista li > a{
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fieldset legend {
+  margin-bottom: 8px;
+}
+
+.formulario__nome {
+  padding: 8px 12px;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.314);
+}
+
+.formulario__label-nome {
+  color: var(--cinza);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.formulario__label-nome:focus-within, .formulario__label-senha:focus-within,
+.formulario__label-email:focus-within {
+  color: #2A7AE4;
+}
+
+#mensagem::placeholder, #nome::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+::placeholder {
+  font-family: 'Raleway', sans-serif;
+  color: var(--cinza);
+}
+
+#mensagem {
+  resize: none;
+  padding: 12px;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.314);
+}
+
+.formulario__submit {
+  background-color: var(--azul);
+  color: white;
+  padding: 16px 12px;
+  border: 1px solid transparent;
+}
+
+.formulario__submit:hover {
+  background-color: white;
+  color: var(--azul);
+  transition: .5s;
+  cursor: pointer;
+  border: 1px solid var(--preto);
+}
+
+footer {
+  text-align: center;
+  padding: 32px 63px;
+  font-weight: 400;
+}

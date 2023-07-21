@@ -59,7 +59,7 @@
 .banner {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
   linear-gradient(180deg, rgba(0, 0, 0, 0.00) 41.15%, rgba(0, 0, 0, 0.80) 100%),
-  url(../assets/Cogumelo.jpg),
+  url(/assets/Cogumelo.jpg),
   lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,6 +105,10 @@
 
 /* Main */ 
 
+ul {
+  list-style: none;
+}
+
 .principal {
   display: flex;
   flex-direction: column;
@@ -115,6 +119,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.principal__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
 .produtos__secao {
@@ -136,7 +146,7 @@
 }
 
 .produtos__secao-link::after {
-  content: url(../assets/seta.svg);
+  content: url(/assets/seta.svg);
   width: 16px;
   height: 16px;
 }
@@ -233,6 +243,7 @@
 .formulario__nome {
   padding: 8px 12px;
   background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.314);
 }
 
 .formulario__label-nome {
@@ -241,7 +252,7 @@
   font-weight: 400;
 }
 
-.mensagem::placeholder, #nome::placeholder {
+#mensagem::placeholder, #nome::placeholder {
   font-size: 1rem;
   font-weight: 400;
 }
@@ -251,17 +262,8 @@
   color: var(--cinza);
 }
 
-#nome {
-  margin-top: 8px;
-}
 
-.mensagem {
-  resize: none;
-  padding: 12px;
-  height: 100%;
-}
-
-#nome, .mensagem{
+#nome, #mensagem{
   width: 100%;
   outline: none;
   border: none;
@@ -269,6 +271,27 @@
   font-size: 1rem;
   font-weight: 400;
   font-family: 'Raleway', sans-serif;
+  
+}
+
+#nome {
+  margin-top: 8px;
+  
+}
+
+#mensagem {
+  resize: none;
+  padding: 12px;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+#mensagem:focus-within, .formulario__nome:focus-within{
+  border-bottom: 2px solid #2a7be4;
+} 
+
+.formulario__label-nome:focus-within{
+  color: #2A7AE4;
 }
 
 .formulario__submit {

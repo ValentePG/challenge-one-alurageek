@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AluraGeek</title>
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/responsivo.css">
+  <link rel="stylesheet" href="style/telaprincipal/telaprincipal.css">
+  <link rel="stylesheet" href="style/telaprincipal/telaprincipal-responsivo.css">
 </head>
 <body>
+
   <header class="header container">
     <div class="header__logo">
       <img src="assets/Logo.svg" alt="Logo AluraGeek">
@@ -34,91 +36,88 @@
     </div>
   </section>
 
+
+  
   <main class="principal container">
-    <section class="principal__produtos">
-      <section class="produtos__secao">
-        <div class="produtos__secao-titulo">
-          <h2>Star Wars</h2>
-        </div>
-        <div class="produtos__secao-link">
-          <a href="@">Ver tudo</a>
-        </div>
-      </section>
-
-      <section class="produto">
-        <section class="produto__vitrine">
-          <div class="produto__vitrine-imagem">
-            <img src="assets/produto1.svg" alt="Caneca stormtrooper">
+    <ul class="principal__lista">
+      <li class="principal__produtos" id="starwars">
+        <section class="produtos__secao">
+          <div class="produtos__secao-titulo">
+            <h2>Star Wars</h2>
           </div>
-          <div class="produto__vitrine-descricao">
-            <p>Produto XYZ</p>
-            <p><strong>R$60,00</strong></p>
+          <div class="produtos__secao-link">
+            <a href="@">Ver tudo</a>
           </div>
-          <a class="descricao__link" href="@">Ver produto</a>
         </section>
-
-        <section class="produto__vitrine">
-          <div class="produto__vitrine-imagem">
-            <img src="assets/produto2.svg" alt="Miniatura Darth Vader">
-          </div>
-          <div class="produto__vitrine-descricao">
-            <p>Produto XYZ</p>
-            <p><strong>R$60,00</strong></p>
-          </div>
-          <a class="descricao__link" href="@">Ver produto</a>
-        </section>
-
-        <section class="produto__vitrine">
-          <div class="produto__vitrine-imagem">
-            <img src="assets/produto3.svg" alt="Boneco do Yoda">
-          </div>
-          <div class="produto__vitrine-descricao">
-            <p>Produto XYZ</p>
-            <p><strong>R$60,00</strong></p>
-          </div>
-          <a class="descricao__link" href="@">Ver produto</a>
-        </section>
-
-        <section class="produto__vitrine">
-          <div class="produto__vitrine-imagem">
-            <img src="assets/produto4.svg" alt="Boneco stormtrooper">
-          </div>
-          <div class="produto__vitrine-descricao">
-            <p>Produto XYZ</p>
-            <p><strong>R$60,00</strong></p>
-          </div>
-          <a class="descricao__link" href="@">Ver produto</a>
-        </section>
-
-        <section class="produto__vitrine extra">
-          <div class="produto__vitrine-imagem">
-            <img src="assets/produto5.svg" alt="Mini yoda">
-          </div>
-          <div class="produto__vitrine-descricao">
-            <p>Produto XYZ</p>
-            <p><strong>R$60,00</strong></p>
-          </div>
-          <a class="descricao__link" href="@">Ver produto</a>
-        </section>
-
-        <section class="produto__vitrine extra">
-          <div class="produto__vitrine-imagem">
-            <img src="assets/produto6.svg" alt="Personagem Star Wars">
-          </div>
-          <div class="produto__vitrine-descricao">
-            <p>Produto XYZ</p>
-            <p><strong>R$60,00</strong></p>
-          </div>
-          <a class="descricao__link" href="@">Ver produto</a>
-        </section> 
-      </section>
-    </section>
+        <ul class="produto">
+          <li class="produto__vitrine">
+            <div class="produto__vitrine-imagem">
+              <img src="assets/produto1.svg" alt="Caneca stormtrooper">
+            </div>
+            <div class="produto__vitrine-descricao">
+              <p>Produto XYZ</p>
+              <p><strong>R$60,00</strong></p>
+            </div>
+            <a class="descricao__link" href="produtos/produto1.html">Ver produto</a>
+          </li>
+          <li class="produto__vitrine">
+            <div class="produto__vitrine-imagem">
+              <img src="assets/produto2.svg" alt="Miniatura Darth Vader">
+            </div>
+            <div class="produto__vitrine-descricao">
+              <p>Produto XYZ</p>
+              <p><strong>R$60,00</strong></p>
+            </div>
+            <a class="descricao__link" href="@">Ver produto</a>
+          </li>
+          <li class="produto__vitrine">
+            <div class="produto__vitrine-imagem">
+              <img src="assets/produto3.svg" alt="Boneco do Yoda">
+            </div>
+            <div class="produto__vitrine-descricao">
+              <p>Produto XYZ</p>
+              <p><strong>R$60,00</strong></p>
+            </div>
+            <a class="descricao__link" href="@">Ver produto</a>
+          </li>
+          <li class="produto__vitrine">
+            <div class="produto__vitrine-imagem">
+              <img src="assets/produto4.svg" alt="Boneco stormtrooper">
+            </div>
+            <div class="produto__vitrine-descricao">
+              <p>Produto XYZ</p>
+              <p><strong>R$60,00</strong></p>
+            </div>
+            <a class="descricao__link" href="@">Ver produto</a>
+          </li>
+          <li class="produto__vitrine extra">
+            <div class="produto__vitrine-imagem">
+              <img src="assets/produto5.svg" alt="Mini yoda">
+            </div>
+            <div class="produto__vitrine-descricao">
+              <p>Produto XYZ</p>
+              <p><strong>R$60,00</strong></p>
+            </div>
+            <a class="descricao__link" href="@">Ver produto</a>
+          </li>
+          <li class="produto__vitrine extra">
+            <div class="produto__vitrine-imagem">
+              <img src="assets/produto6.svg" alt="Personagem Star Wars">
+            </div>
+            <div class="produto__vitrine-descricao">
+              <p>Produto XYZ</p>
+              <p><strong>R$60,00</strong></p>
+            </div>
+            <a class="descricao__link" href="@">Ver produto</a>
+          </li>
+        </ul>
+      </li>
 
     <!-- Consoles -->
 
-    <section class="principal__produtos">
+    <li class="principal__produtos" id="consoles">
       <section class="produtos__secao">
-        <div class="produtos__secao-titulo" id="consoles">
+        <div class="produtos__secao-titulo">
           <h2>Consoles</h2>
         </div>
         <div class="produtos__secao-link">
@@ -126,8 +125,8 @@
         </div>
       </section> 
 
-      <section class="produto">
-        <section class="produto__vitrine">
+      <ul class="produto">
+        <li class="produto__vitrine">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto7.svg" alt="Playstation 5">
           </div>
@@ -136,9 +135,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine">
+        <li class="produto__vitrine">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto8.svg" alt="Controle Xbox Branco">
           </div>
@@ -147,9 +146,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine">
+        <li class="produto__vitrine">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto9.svg" alt="Console Nintendo">
           </div>
@@ -158,9 +157,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine">
+        <li class="produto__vitrine">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto10.svg" alt="Nintendo Switch">
           </div>
@@ -169,9 +168,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine extra">
+        <li class="produto__vitrine extra">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto11.svg" alt="Xbox Series X">
           </div>
@@ -180,9 +179,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine extra">
+        <li class="produto__vitrine extra">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto12.svg" alt="MiniGame">
           </div>
@@ -191,13 +190,13 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
-      </section>
-    </section>
+        </li>
+      </ul>
+    </li>
 
 
     <!-- Diversos -->
-    <section class="principal__produtos">
+    <li class="principal__produtos" id="diversos">
       <section class="produtos__secao">
         <div class="produtos__secao-titulo">
           <h2>Diversos</h2>
@@ -207,8 +206,8 @@
         </div>
       </section>
 
-      <section class="produto"> <!-- Poderia ser uma UL -->
-        <section class="produto__vitrine"> <!-- Poderia ser uma Li -->
+      <ul class="produto"> <!-- Poderia ser uma UL -->
+        <li class="produto__vitrine"> <!-- Poderia ser uma Li -->
           <div class="produto__vitrine-imagem">
             <img src="assets/produto13.svg" alt="Atari">
           </div>
@@ -217,9 +216,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine">
+        <li class="produto__vitrine">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto14.svg" alt="Pessoa em posse de um nintendo Switch">
           </div>
@@ -228,9 +227,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine">
+        <li class="produto__vitrine">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto15.svg" alt="Boneco do sonic e ao fundo o tails">
           </div>
@@ -239,9 +238,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine">
+        <li class="produto__vitrine">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto16.svg" alt="Relogio antigo">
           </div>
@@ -250,9 +249,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine extra">
+        <li class="produto__vitrine extra">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto17.svg" alt="Homem jogando em Realidade Virtual">
           </div>
@@ -261,9 +260,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
+        </li>
 
-        <section class="produto__vitrine extra">
+        <li class="produto__vitrine extra">
           <div class="produto__vitrine-imagem">
             <img src="assets/produto18.svg" alt="Pessoa fantasiada de pikachu">
           </div>
@@ -272,9 +271,9 @@
             <p><strong>R$60,00</strong></p>
           </div>
           <a class="descricao__link" href="@">Ver produto</a>
-        </section>
-      </section>
-    </section>
+        </li>
+      </ul>
+    </ul>
   </main>
 
   <section class="background">
@@ -297,10 +296,10 @@
         <fieldset class="fieldset">
           <legend><strong>Fale Conosco</strong></legend>
           <div class="formulario__nome">
-            <label for="nome" class="formulario__label-nome">Nome<input type="text" name="nome" id="nome" placeholder="Escreva seu nome"></label>
+            <label for="nome" class="formulario__label-nome">Nome<input type="text" name="nome" id="nome" placeholder="Escreva seu nome" required></label>
           </div>
           <div class="formulario__mensagem">
-            <textarea name="mensagem" class="mensagem" id="mensagem" cols="30" rows="5" placeholder="Escreva sua mensagem"></textarea>
+            <textarea name="mensagem" class="mensagem" id="mensagem" cols="30" rows="5" placeholder="Escreva sua mensagem" required></textarea>
           </div>
           <input type="submit" value="Enviar Mensagem" class="formulario__submit">
         </fieldset>

@@ -18,10 +18,6 @@
     width: 20vw; 
   }
   
-  .header__formulario {
-    display: none;
-  }
-
   .formulario__submit {
     width: 150px;
   }
@@ -80,9 +76,10 @@
   }
   
   .label__pesquisa::after {
-    content: url(../assets/Icone-cinza.svg);
+    content: url(/assets/Icone-cinza.svg);
     color: var(--cinza);
     margin-top: 2px;
+    cursor: pointer;
   }
   
   #pesquisa::placeholder {
@@ -173,10 +170,6 @@
 
   .rodape__informacao-logo {
     width: 40%;
-  }
-
-  .rodape__informacao-logo img {
-    max-width: 100%;
   }
 
   .rodape__informacao-lista {
